@@ -1,0 +1,112 @@
+body, html{font-family: Tahoma,'Microsoft YaHei', 'simhei', sans-serif; font-size: 14px; color: #777;}
+a{text-decoration: none; color: #777;}
+.a-justify{text-align: justify; overflow: hidden;}
+	.a-justify>div,.a-justify>li{display: inline-block; vertical-align:top;}
+	.a-justify:after{content: ''; display: inline-block; width: 100%; font-size: 0; line-height: 0; height: 0;}
+.a-right{text-align: right;}
+.a-left{text-align: left;}
+.a-center{text-align: center;}	
+.col-1{width: 1113px; margin: auto}	
+.col-max{width: 1280px; margin: auto}
+.col-33{width: 33%}
+.col-66{width: 66%}
+.d-block{display: block; border:0;}
+.f-left{float: left; display: block;}
+.f-right{float: right; display: block;}
+.hide{display: none !important;}
+.blue{color: #0e6eb8 !important}
+.red{color: red !important;}
+.data-table{border:1px solid #bbb;}
+	.data-table a:hover{color: #0e6eb8}
+	.data-table td{padding: 10px; vertical-align: middle; line-height: 23px}
+		.data-table td.date{padding-left: 30px; width: 80px}
+		.data-table tr td:last-child{padding-right: 30px; }
+	.data-table .odd td{background: #fff}
+	.data-table .title td{background: #0e6eb8; color: #fff}
+	.data-table .even td{background: #ecf3f9}
+.odd{background: #fff}
+.even{background: #ecf3f9}	
+.pager{padding: 10px 0}	
+	.page-item{display: inline-block; color: #fff; cursor: pointer; background-color: #cacaca; 
+		line-height: 22px; padding: 0 5px; font-size: 12px}	
+	.page-first{background:#cacaca url(../images/pagearrow.gif) 5px 0 no-repeat; padding-left: 20px }	
+	.page-last{background:#cacaca url(../images/pagearrow.gif) 32px bottom no-repeat; padding-right: 20px }	
+
+#header{height: 83px}	
+	#nav{}
+		#nav a{margin: 0 20px; font-weight: bold; display: inline-block;line-height: 80px; color: #6a6a6a; font-size: 16px;border-bottom:3px solid #fff; }
+		#nav a.current{border-bottom:3px solid #0e6eb8;}
+	#topRightbar{font-size: 12px; line-height: 80px}	
+
+#homeMain{margin: 30px auto; }
+	.home-ctn{background: #eee url(../images/home-icon.png) right top no-repeat; height: 162px; width:540px; line-height: 22px}
+	.home-ctn:last-child{background-position: right bottom;}
+	.home-ctn h2{color: #949494; font-size: 20px; font-weight: bold;line-height: 30px; margin-bottom: 5px}
+		.home-ctn>div{padding:15px 20px; max-width: 338px}
+		.home-ctn li{margin-bottom: 3px; text-align: left;}
+		.home-ctn a{color: #6a6a6a}
+			.home-ctn a:hover{color: #0e6eb8}
+			.home-download{background: url(../images/down-icon.png) right -2px no-repeat; padding-right: 17px}
+
+.col-body{background: #dfdfdf url(../images/bg-body.jpg) repeat-x; padding: 30px 0}	
+	.content-wrapper{padding: 45px; background: #fff; box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.3)}	
+	#newsTabs{margin-bottom: 20px}
+		#newsTabs li{width: 32%;}
+			#newsTabs a{font-size: 18px; background: #e1e1e1; display:block; color: #6a6a6a; height: 45px; line-height: 45px}
+			#newsTabs a.active,#newsTabs a:hover{background: #0e6eb8; color: #fff; }
+	#update{}
+		.update-intro{padding: 30px; border-bottom: 1px dashed #bcbcbc}
+		.update-userinfo{padding: 30px;}
+		#update a{text-decoration: underline;}
+		#update p{line-height: 23px; margin-bottom: 5px}		
+		#update p.title{font-size: 16px; margin-bottom: 10px;}	
+		#update .data-table td	{vertical-align: top;}
+	#keyan{border:1px solid #bbb;}	
+		.keyan-item{padding: 30px}
+		.keyan-item p{line-height: 23px; margin-bottom: 10px}
+		.keyan-item p.title{font-size: 18px; margin: 5px 0;color: #373737}
+		.keyan-item p.year{font-size: 24px; padding-top: 10px}
+		.keyan-item span{display: inline-block; vertical-align: top;}
+		.keyan-item .p-pre{padding-right: 10px; min-width: 10px}
+		.keyan-item .p-ctn{max-width: 95%}
+		.works-year{clear: both;}
+		#chooseWrapper{padding:10px 0 0 20px}
+#serviceMain{}
+	.service-ctn{background: #f3f3f3; clear: both; overflow: hidden;}
+		.service-index{color: #fff; font-size: 180px; padding: 0 30px}	
+		.service-ctn-text{margin-left: 394px; padding-top: 30px}
+		.service-ctn-text p{font-size: 16px; line-height: 30px;}
+		.service-ctn p.title{font-size: 30px; margin-bottom: 20px}
+			.service-ctn .subtitle{font-size: 20px}
+		.service-ctn-list{margin: 30px 0 30px 30px}	
+			.service-ctn-list ul{width: 785px}	
+			.service-ctn-list li{width: 145px; margin-right: 15px; margin-bottom: 15px}	
+			.service-ctn-list li.last{margin: 0}
+				.service-ctn-list li p{padding: 13px; height: 25px; background: #ddd; font-size: 12px}
+	#service-1{background:#f3f3f3 url(../images/service-1.png) no-repeat; height: 236px}	
+	#service-3{background:#f3f3f3 url(../images/service-3.png) no-repeat; height: 236px}	
+	#service-2{margin: 35px 0;}
+#contactMain{line-height: 28px}
+	#contactMain p.title{font-size: 26px; margin-bottom: 20px}
+	.contact-address{padding: 30px;  border-bottom: 1px dashed #bcbcbc; overflow: hidden;}	
+		.contact-address .f-left{width: 49%}
+	.contact-message{padding: 30px; margin-bottom: 20px}
+		.contact-message form{height: 106px;}
+			.col-form-2{margin:0 8px; width: 560px}
+			.contact-message label{display: inline-block; width: 80px; margin-bottom: 8px}	
+			.contact-message input,.contact-message select{ width: 200px; height: 28px; line-height: 28px; margin-bottom: 8px; vertical-align:top;}	
+			.contact-message input,.contact-message select, .contact-message textarea{background: #ededed; border:1px solid #d7d7d7;}	
+			.contact-message textarea{width: 100%; height: 106px; margin:0;}
+			.contact-message a{width: 104px; height: 106px; display: inline-block; background: #0e6eb8; color: #fff; text-align: center; line-height: 106px}
+		.contact-qa .pager{padding-top: 0}
+
+.about-ctn{padding: 30px}
+	.about-ctn p.title{font-size: 26px; }	
+	.about-ctn p{line-height: 28px;margin-bottom: 20px; font-size: 16px}	
+
+.col-footer{background:url(../images/bg-footer.png) repeat-x;}
+#footer{}
+	#footerNav{height: 60px; line-height: 60px}
+	#copyrights{height: 55px; line-height: 55px; font-size: 12px}
+
+			

@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <title>最新消息</title>
+        <script src="js/jquery-1.11.1.min.js" ></script> 
+        <script src="js/main.js" ></script> 
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+    	<link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body >
+        <div id="header" class="a-justify col-1">
+            
+        </div>
+        <div id="newsMain" class="col-body">
+            <div class="col-1">
+                <div class="content-wrapper">
+                    <ul class="a-justify" id="newsTabs">
+                        <li class="a-center"><a class="active" href="#xueshu">最新学术活动</a></li>
+                        <li class="a-center"><a href="#keyan">科研成果</a></li>
+                        <li class="a-center"><a href="#update">软件更新提示</a></li>
+                    </ul>
+                    <div class="newstabs-ctn" id="xueshu">
+                        
+                    </div>
+                    <div class="newstabs-ctn hide" id="keyan">
+                          
+                    </div>
+                    <div class="newstabs-ctn hide" id="update">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer" class="col-footer">
+            
+        </div>  
+        <script type="text/javascript">
+            currentNav = 2;
+            $('#xueshu').load('html/xueshu.html');
+            $('#update').load('html/update.html');
+            $('#keyan').load('html/keyan.html', function(){
+                var optionsArr = [];
+                for (var i = 2013; i >= 1998; i--) {
+                    optionsArr.push('<option value="'+i+'">'+i+'</option>')
+                };
+                $('#chooseyear').html(optionsArr.join('')).on('change',function(){
+                    $('.works-year').addClass('hide');
+                    $('#year'+$('#chooseyear').val()).removeClass('hide');
+                })
+            });
+
+
+            $('#newsTabs a').on('click',function(e){
+                e.preventDefault();
+                $('#newsTabs a').removeClass('active');
+                $('.newstabs-ctn').addClass('hide');
+                $($(this).addClass('active').attr('href')).removeClass('hide');
+
+            })
+        </script>     
+    </body>
+</html>
