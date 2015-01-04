@@ -1,4 +1,4 @@
-body, html{font-family: Tahoma,'Microsoft YaHei', 'simhei', sans-serif; font-size: 14px; color: #777;}
+body, html{font-family: Tahoma,"Microsoft YaHei","Hiragino Sans GB", sans-serif; font-size: 14px; color: #777;}
 a{text-decoration: none; color: #777;}
 .a-justify{text-align: justify; overflow: hidden;}
 	.a-justify>div,.a-justify>li{display: inline-block; vertical-align:top;}
@@ -99,6 +99,32 @@ a{text-decoration: none; color: #777;}
 			.contact-message textarea{width: 100%; height: 106px; margin:0;}
 			.contact-message a{width: 104px; height: 106px; display: inline-block; background: #0e6eb8; color: #fff; text-align: center; line-height: 106px}
 		.contact-qa .pager{padding-top: 0}
+#softwareMain{}
+	.software-ctn{padding: 30px 0 30px 30px }
+	.software-preview{margin: 10px 0}
+	.software-table td{padding: 5px 10px; border-bottom: 1px solid #bbb; vertical-align: top;}
+		.software-table tr td:first-child{padding-left: 30px}
+		.software-table tr td:last-child{padding-right: 30px}
+		.software-downlaod,.software-detail,.software-video{
+			background: url(../images/software-icon.png) right 1px no-repeat; padding-right: 15px}
+			.software-downlaod{background-position: right -18px; margin-right: 10px}
+			.software-detail{background-position: right -36px;}
+			.software-video-expand{background-position: right -53px; color: #0e6eb8}
+	.data-table .name td{font-size: 18px; color:#fff;}		
+		.data-table .name td span{font-size: 16px; }		
+	.data-table .grey td{background: #ddd}		
+	.data-table .tbodystyle1 .name td{background: #0e6eb8}		
+	.data-table .tbodystyle1 td{background: #ecf4f9}
+	.data-table .tbodystyle2 .name td{background: #77ae42}		
+	.data-table .tbodystyle2 td{background: #edfae0}
+	.data-table .tbodystyle3 .name td{background: #499ad7}		
+	.data-table .tbodystyle3 td{background: #ebf5fc}
+	.data-table .tbodystyle4 .name td{background: #99d460}		
+	.data-table .tbodystyle4 td{background: #f1ffe4}
+	.data-table .tbodystyle5 .name td{background: #46bcc7}		
+	.data-table .tbodystyle5 td{background: #eafaf7}
+	.data-table .tbodystyle6 .name td{background: #38c663}		
+	.data-table .tbodystyle6 td{background: #e9fdef}		
 
 .about-ctn{padding: 30px}
 	.about-ctn p.title{font-size: 26px; }	
@@ -106,7 +132,12 @@ a{text-decoration: none; color: #777;}
 
 .col-footer{background:url(../images/bg-footer.png) repeat-x;}
 #footer{}
-	#footerNav{height: 60px; line-height: 60px}
+	#footerNav{height: 60px; line-height: 60px; position: relative;}
 	#copyrights{height: 55px; line-height: 55px; font-size: 12px}
+	.footerlinks2{position: absolute; top:0; left: 0;font-size: 12px}
+	.showlink2{position: absolute; right: 0; top: 0; width: 100%}
+		.showlink2.blue{font-weight: bold;}
+	.footerlinks2 a{margin-right: 10px}	
+	.footerlinks2 a:hover{color: #0e6eb8}	
 
 			
