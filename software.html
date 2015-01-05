@@ -4,9 +4,11 @@
         <meta http-equiv="Content-type" content="text/html; charset=utf-8">
         <title>软件中心</title>
         <script src="js/jquery-1.11.1.min.js" ></script> 
+        <script src="js/jquery.colorbox.js" ></script> 
         <script src="js/main.js" ></script> 
         <link rel="stylesheet" type="text/css" href="css/reset.css">
-    	<link rel="stylesheet" type="text/css" href="css/style.css">
+    	<link rel="stylesheet" type="text/css" href="css/colorbox.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body >
         <div id="header" class="a-justify col-1">
@@ -37,7 +39,7 @@
                             <tr class="content">
                                 <td>
                                     <a class="software-video software-video-expand" href="#">软件安装指南</a><br/>
-                                    <img class="software-preview d-block" src="images/video.png" />
+                                    <a class="colorbox" href="#video"><img class="software-preview d-block" src="images/video.png" /></a>
                                 </td>
                                 <td>2014.6.8</td>
                                 <td>
@@ -518,6 +520,11 @@
                 </div>
             </div>
         </div>
+        <div class="hide">
+            <div id="video">
+                <embed src="http://player.youku.com/player.php/Type/Folder/Fid/23306108/Ob/1/sid/XODY0Mjg3OTky/v.swf" quality="high" width="460" height="300" align="middle" allowScriptAccess="always" allowFullScreen="true" mode="transparent" type="application/x-shockwave-flash"></embed>
+            </div>
+        </div>
         <div id="footer" class="col-footer">
             
         </div>
@@ -530,7 +537,19 @@
             $('#softwareCategory').html(optionsArr.join('')).on('change',function(){
                 $('.software-table tbody').not('.grey').addClass('hide');
                 $('.software-table tbody').eq($('#softwareCategory').val()).removeClass('hide');
-            }).val(1).trigger('change')           
+            }).val(1).trigger('change');
+            function hideborder(){
+               $("#cboxTopLeft").hide();
+                $("#cboxTopRight").hide();
+                $("#cboxBottomLeft").hide();
+                $("#cboxBottomRight").hide();
+                $("#cboxMiddleLeft").hide();
+                $("#cboxMiddleRight").hide();
+                $("#cboxTopCenter").hide();
+                $("#cboxBottomCenter").hide();
+                $('#cboxContent').addClass('colorbox-roundconner');
+             } 
+            $('.colorbox').colorbox({inline:true})           
         </script>        
     </body>
 </html>
